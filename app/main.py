@@ -8,8 +8,6 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from src.recommender import recommend_for_new_user, get_movie_details, _catalog, _genre_columns
 
-from dotenv import load_dotenv
-load_dotenv()   # reads .env into environment variables
 
 app = FastAPI()
 
