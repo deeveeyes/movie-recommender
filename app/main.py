@@ -14,7 +14,7 @@ app = FastAPI()
 # This lets the React app (on port 5173) talk to FastAPI (on port 8000)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"], # Allow all origins so Vercel can connect
     allow_methods=["*"],
     allow_headers=["*"],
 )
